@@ -1,0 +1,42 @@
+<li class="car">
+  <div class="car__block">
+    <div class="car__info">
+      <p class="car-info__name">{{ car.name }}</p>
+      <div class="car__engine">
+        <button type="button" data-id="{{car.id}}" class="car-engine__start">
+          Start
+        </button>
+        <button
+          disabled
+          type="button"
+          data-id="{{car.id}}"
+          class="car-engine__stop"
+        >
+          Stop
+        </button>
+      </div>
+    </div>
+    <div class="car__nav">
+      <button
+        type="button"
+        data-id="{{car.id}}"
+        class="car-nav__button car-nav__button--remove"
+      >
+        $
+      </button>
+      <button
+        type="button"
+        data-id="{{car.id}}"
+        class="car-nav__button car-nav__button--update"
+      >
+        Custom
+      </button>
+    </div>
+  </div>
+  <span
+    class="car__image"
+    data-id="{{car.id}}"
+    style="background-color: {{car.color}}"
+  ></span>
+  <span data-id="{{car.id}}" class="car__finish"></span>
+</li>

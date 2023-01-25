@@ -1,0 +1,17 @@
+.nav {
+  display: grid;
+  height: 60px;
+  align-items: center;
+  grid-template-columns: repeat(2, max-content);
+  gap: 15px;
+  background-color: rgba(black, 0.2);
+
+  &__link {
+    color: white;
+    transition: all 0.1s linear;
+
+    &:hover {
+      color: #c993ed;
+    }
+  }
+}

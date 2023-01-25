@@ -1,0 +1,21 @@
+.garage {
+  &__nav {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: space-between;
+  }
+}
+
+.garage-nav {
+  &__left {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    gap: 15px;
+  }
+
+  &__button {
+    padding: 5px 15px;
+    cursor: pointer;
+    border: 0;
+  }
+}

@@ -1,0 +1,45 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  background-color: rgba(black, 0.5);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: black;
+
+  &__form {
+    display: grid;
+    width: 350px;
+    height: auto;
+    background-color: white;
+    border-radius: 10px;
+    grid-template-rows: repeat(2, max-content);
+    padding: 15px 15px 15px 10px;
+  }
+
+  &__right {
+    position: relative;
+    left: -60px;
+    display: inline-block;
+    width: 200px;
+    height: 80px;
+    overflow: hidden;
+    mask-image: url(../img/car.svg);
+    background-color: black;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    mask-size: 100% 100%;
+    pointer-events: none;
+  }
+}
+
+.modal-form {
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+  }
+}

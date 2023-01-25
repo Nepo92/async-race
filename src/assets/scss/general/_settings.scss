@@ -1,0 +1,47 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: linear-gradient(130deg, purple, red);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  min-height: 100vh;
+  font-family: "Hind Siliguri";
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  padding: 15px;
+}
+
+button {
+  cursor: pointer;
+}

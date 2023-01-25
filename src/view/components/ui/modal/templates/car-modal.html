@@ -1,0 +1,33 @@
+<form class="modal">
+  <div class="modal__form">
+    <div class="modal-form__wrapper">
+      <div class="modal__left">
+        <div class="modal-left__item">
+          <label for="car-name">Name</label>
+          <input
+            required
+            id="car-name"
+            class="car-input__name"
+            type="text"
+            placeholder="Enter car name"
+            value="{{car.name}}"
+          />
+        </div>
+        <div class="modal-left__item">
+          <label for="car-color">Color</label>
+          <input
+            required
+            id="car-color"
+            class="car-input__color"
+            type="color"
+            value="{{car.color}}"
+          />
+        </div>
+      </div>
+      <div class="modal__right"></div>
+  </div>
+  <div class="modal__nav">
+    <button type="button" class="modal__button--cancel">Cancel</button>
+    <button type="submit" class="modal__button--apply">Create</button>
+  </div>
+</form>
